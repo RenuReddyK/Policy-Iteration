@@ -55,8 +55,7 @@ def Up(T, N, goal, obstacles):
                     T[i, j, i-1, j] = 0.7
                     T[i, j, i, j] = 0.1
                     T[i, j, i, j+1] = 0.1
-                    T[i, j, i, j-1] = 0.1
-                
+                    T[i, j, i, j-1] = 0.1         
     return T
 
 def Right(T,N, goal, obstacles):
@@ -76,8 +75,7 @@ def Right(T,N, goal, obstacles):
                     T[i, j, i-1, j] = 0.1
                     T[i, j, i, j] = 0.1
                     T[i, j, i, j+1] = 0.7
-                    T[i, j, i+1, j] = 0.1
-                    
+                    T[i, j, i+1, j] = 0.1  
     return T
         
 def Left(T,N, goal, obstacles):
